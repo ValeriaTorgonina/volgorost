@@ -1,0 +1,40 @@
+<section class="intro">
+    <div class="container">
+        <div id="sliderIntro" class="intro__slider">
+            <div class="intro__slider-container swiper-container">
+                <div class="intro__slider-wrapper swiper-wrapper">
+                    <% const list = [
+                        {}, {}, {}, {}, {}, {}
+                    ] %>
+
+                    <% list.forEach(function (item) { %>
+                        <div class="intro__slide swiper-slide">
+                            <img class="intro__slide-img" src="../../images/content/intro-slide.jpg" usemap="#navigation"></p>
+                            <div class="intro__slide-dot" style="top: 71%; left: 12%"></div>
+                            <div class="intro__slide-dot" style="top: 56%; left: 36.7%"></div>
+                            <div class="intro__slide-dot" style="top: 28%; left: 59%"></div>
+                            <div class="intro__slide-dot" style="top: 49%; left: 58%"></div>
+                            <div id="introDot1" class="intro__slide-dot" style="top: 53%; left: 71%"></div>
+                            <div class="intro__slide-dot" style="top: 34%; left: 83%"></div>
+                            <div class="intro__slide-dot" style="top: 55%; left: 82.5%"></div>
+                            <div id="introTooltip1" class="intro__card-container">
+                                <%- require('./product-card.ejs')() %>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+            <button class="intro__prev swiper-button-prev">
+                <svg class="i-icon">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </button>
+            <button class="intro__next swiper-button-next">
+                <svg class="i-icon">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </button>
+            <div class="intro__pagination swiper-pagination"></div>
+        </div>
+    </div>
+</section>

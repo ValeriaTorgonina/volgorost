@@ -1,0 +1,12 @@
+.catalog {
+    &__btn {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 18px;
+
+        .i-icon {
+            margin-right: 14px;
+            width: 30px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+<!-- (c) Digital Element || http://www.d-element.ru/ -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=61536017-f4a7-4aaf-a708-fa73ef88c02d&amp;lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+<div class="flow-container <%= flowContainerClass && flowContainerClass %>">
+    <div class="content">
+        <header class="header">
+            <nav class="main-nav">
+                <div class="container">
+                    <a href="#" class="main-nav__logo">
+                        <img src="../images/content/logo.png" alt="ВолгоРост" class="main-nav__logo-img">
+                    </a>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Оплата</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Доставка</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Магазины</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Оптовым клиентам</a>
+                        </li>
+                    </ul>
+                    <label class="search">
+                        <input type="text" class="input" placeholder="Что вы хотите найти?">
+                        <button class="search__btn">
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
+                        </button>
+                    </label>
+                    <a href="tel:+78442602040" class="main-nav__phone">+7 (8442) 60-20-40</a>
+                </div>
+            </nav>
+            <div class="header__bottom">
+                <div class="container">
+                    <section class="catalog">
+                        <button class="catalog__btn">
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-menu"></use>
+                            </svg>
+                            Каталог товаров
+                        </button>
+                    </section>
+                    <a href="#" class="header__link">Комнаты</a>
+                    <a href="#" class="header__link">Спецпредложения</a>
+                    <button class="sign-in-btn">
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-user"></use>
+                        </svg>
+                        Вход / Регистрация
+                    </button>
+                </div>
+            </div>
+        </header>

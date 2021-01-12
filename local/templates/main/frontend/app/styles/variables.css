@@ -1,0 +1,21 @@
+@import "media.css";
+
+:root {
+    --c-black: black;
+    --c-green: #027439;
+
+    --border: #F0F0F0;
+
+    --controlBg: #e3e3e3;
+    --controlColor: #7a7a7a;
+    --controlTrack: #c4c4c4;
+
+    --inputBg: #EDEDED;
+    --inputBorder: #CFCFCF;
+
+    --placeholder: #B6ACA0;
+
+    --boxShadow: 0px 30px 55px rgba(0, 0, 0, 0.1);
+    --borderRadius: 6px;
+    --transition: .2s;
+}

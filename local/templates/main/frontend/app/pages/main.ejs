@@ -1,0 +1,8 @@
+<% const data = {
+    'title': 'Главная',
+    'flowContainerClass' : 'flow-container--main'
+} %>
+
+<%- require("../layouts/header.ejs")(data) %>
+<%- require('../components/elements/intro.ejs')() %>
+<%- require("../layouts/footer.ejs")() %>

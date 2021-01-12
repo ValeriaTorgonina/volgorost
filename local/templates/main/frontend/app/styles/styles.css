@@ -1,0 +1,185 @@
+@import "variables.css";
+@import "media.css";
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.24;
+    font-weight: 400;
+}
+
+body {
+    min-height: inherit;
+    font-family: 'Gilroy', 'Open Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.002rem;
+    color: var(--c-black);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &.overflow-hidden {
+
+    }
+}
+
+#svg-sprite {
+    display: none !important;
+}
+
+.flow-container {
+    display: flex;
+    flex-flow: column;
+    min-height: inherit;
+    overflow-x: hidden;
+    z-index: 3;
+}
+
+.content {
+    position: relative;
+    display: block;
+    flex: 1 0 0;
+}
+
+.container {
+    max-width: 1330px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.24;
+}
+
+h1, .h1 {
+    font-size: 45px;
+}
+
+h2, .h2 {
+    font-size: 40px;
+}
+
+h3, .h3 {
+    font-size: 30px;
+}
+
+h4, .h4 {
+    font-size: 24px;
+}
+
+h5, .h5 {
+    font-size: 20px;
+}
+
+h6, .h6 {
+    font-size: 19px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-black);
+    transition: .2s;
+
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        color: var(--c-green);
+    }
+}
+
+a, button, svg {
+    transition: 0.2s;
+}
+
+.link {
+    @extend a;
+    color: var(--c-green);
+    text-decoration: underline;
+
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ol {
+    counter-reset: list 0;
+    ul {
+        opacity: 0.8;
+        list-style: none;
+    }
+    > li {
+        position: relative;
+        font-size: 14px;
+        &::before {
+            counter-increment: list;
+            content: counter(list) ".";
+            position: absolute;
+            top: -1rem;
+            left: 0;
+            font-size: 24px;
+        }
+        ol {
+            counter-reset: sublist 0;
+            li {
+                font-size: 13px;
+                &::before {
+                    counter-increment: sublist;
+                    content: counter(list) "." counter(sublist);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.9;
+    &:first-of-type {
+        margin-top: 0;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+hr {
+    margin: 26px 0;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}

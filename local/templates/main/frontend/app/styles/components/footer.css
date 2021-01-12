@@ -1,0 +1,54 @@
+@import "../media.css";
+@import "../variables.css";
+
+.footer {
+    background: #FAFAFC;
+
+    &__bottom {
+        padding: 23px 0;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+    }
+
+    &__socials-item {
+        opacity: 0.2;
+        width: 30px;
+        height: 30px;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        .i-icon {
+            width: 20px;
+            height: 19px;
+        }
+    }
+
+    &__docs {
+        max-width: 300px;
+        font-size: 13px;
+
+        .link {
+            padding-right: 10px;
+        }
+    }
+
+    &__payment {
+        display: flex;
+
+        img {
+            height: 20px;
+            margin-left: 20px;
+        }
+    }
+}

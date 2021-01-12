@@ -1,0 +1,53 @@
+        </div>
+        <footer class="footer">
+            <%- require('../components/elements/subscribe.ejs')() %>
+            <%- require('../components/elements/footer-menu.ejs')() %>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__socials">
+                        <a href="#" class="footer__socials-item">
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__socials-item">
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-fb"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__socials-item">
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-ok"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__socials-item">
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-inst"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__docs">
+                        <a href="#" class="link">Политика конфиденциальности</a>
+                        <a href="#" class="link">Cookies</a>
+                        <a href="#" class="link">Обработка персональных данных</a>
+                    </div>
+                    <div class="footer__payment">
+                        <img src="../images/icons/visa.png" alt="visa">
+                        <img src="../images/icons/mc.png" alt="masterCard">
+                        <img src="../images/icons/mir.png" alt="мир">
+                        <img src="../images/icons/gp.png" alt="GogglePay">
+                        <img src="../images/icons/ap.png" alt="ApplePay">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <%- require('./mobile-menu.ejs')() %>
+        <%- require('./mobile-filter.ejs')() %>
+        <%- require('./modals.ejs')() %>
+        <div class="overlay"></div>
+        <div class="preloader" data-preloader>
+            <div></div>
+        </div>
+    </body>
+</html>

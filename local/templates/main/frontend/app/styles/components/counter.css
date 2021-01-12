@@ -1,0 +1,29 @@
+.counter {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    
+    &__minus,
+    &__plus {
+        width: 15px;
+        height: 15px;
+
+        .i-icon {
+            fill: #C4C4C4;
+        }
+
+        &:hover {
+            .i-icon {
+                fill: var(--c-green);
+            }
+        }
+    }
+
+    &__result {
+        display: inline-block;
+        width: 68px;
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+    }
+}

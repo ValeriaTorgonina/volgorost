@@ -1,0 +1,21 @@
+@import "../media.css";
+@import "../variables.css";
+
+.btn {
+    background: var(--c-green);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    height: 50px;
+    min-width: 255px;
+    border-radius: 50px;
+
+    &:disabled {
+        opacity: 0.5;
+    }
+
+    &:active {
+        background: #009447;
+    }
+}

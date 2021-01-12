@@ -1,0 +1,73 @@
+.footer-menu {
+    padding: 50px 0 30px;
+    border-top: 1px solid #F4F4F4;
+    border-bottom: 1px solid #F4F4F4;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        
+        display: block;
+        margin-bottom: 23px;
+    }
+    &__logo-img {
+        width: 130px;
+        height: 65px;
+    }
+    &__phone {
+        display: block;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    &__email {
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    &__copyright {
+        display: block;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: #BABABA;
+        max-width: 255px;
+        margin-bottom: 20px;
+    }
+    &__creator {
+        font-weight: 500;
+        font-size: 13px;
+        color: #BABABA;
+
+        .i-icon {
+            width: 147px;
+            height: 20px;
+            fill: #C7C7C7;
+            margin-bottom: 5px;
+
+            &:active {
+                fill: var(--c-green);
+            }
+        }
+    }
+    &__nav {
+        min-width: 180px;
+    }
+    
+    &__nav-title {
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 8px 0;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
